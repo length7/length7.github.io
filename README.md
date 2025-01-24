@@ -67,8 +67,54 @@ For more information about configuring front matter, see the [Jekyll frontmatter
 
 ---
 
+
 Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
 
 &copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
 
 </footer>
+| 技术列表 | 缓解SEU故障 | 缓解SET故障 | 故障检测 | 故障校正 | 性能 | 额外面积开销 | 额外时间开销 |
+
+| ----------- | ------- | ------- | ------- | ------- | ----------- | ----------- | ------------ |
+
+| Hardware Duplication and comparison | Y | Y | Y | N | Minimal | +100% | Minimal |
+
+| Hardware Duplication and redundancy | Y | Y | Y | N | Minimal | +100% | Minimal |
+
+| TMR | Y | Y | Y | Y | Average | +200% | Minimal |
+
+| Simple Temporal Redundancy | Y | N | Y | N | Minimal | Low | +100%  |
+
+| Repetition | Y | Y | Y | Y | Average | Low | +200% |
+
+| Double Coding | Y | Y | Y | N | Average | Average | +100% |
+
+| Multiple Sampling | N | Y | Y | N | Average | Average | Minimal |
+
+| Recomputing  with shifted operands | Y | N | Y | N | Average | Low | +100% |
+
+| Recomputing  with swapped operands | Y | N | Y | N | Average | Low | +100% |
+
+| Recomputing  duplication with comparison | Y | N | Y | N | Average | Low | +100% |
+
+| Parity Bit |  Y | N | Y | N | Low | Low | Low |
+
+| Hamming Codes | Y | N | Y | Y | Good | Average | Average |
+
+| Polynominal Codes | Y | N | Y | N | Good | Average | Average |
+
+| Convolutional Codes | Y | N | Y | Y |
+
+| Reed-Muller Codes | Y | N | Y | Y | Good | Average | Average |
+
+| Turbo Codes | Y | N | Y | Y | Maximal | High | High |
+
+| Low Density Parity Check | Y | N | Y | Y | Maximal | Low | Low |
+
+| Cyclic Redundancy Check | Y | N | Y | N | Good | Low | Low |
+
+| Reed-Solomon Codes | Y | N | Y | Y | Good | Average | Average |
+
+| BCH Codeing | Y | N | Y | Y | Good | Average | Average |
+
+| Linear Digital State Variable | Y | N | Y | Y | Average | Average | Low |
